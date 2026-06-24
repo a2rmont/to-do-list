@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To-do list interativa desenvolvida por Anna Rachel Monteiro.">
+    <title>To-Do List | Anna Rachel Monteiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <span class="tag">Projeto JavaScript</span>
+ 
+        <h1>Minhas Tarefas</h1>
+        <p class="subtitulo">Organize seu dia, uma tarefa por vez.</p>
+ 
+        <form id="formTarefa">
+            <input
+                type="text"
+                id="inputTarefa"
+                placeholder="O que você precisa fazer?"
+                autocomplete="off"
+            >
+            <button type="submit">Adicionar</button>
+        </form>
+ 
+        <div class="filtros" id="filtros">
+            <button class="filtro ativo" data-filtro="todas">Todas</button>
+            <button class="filtro" data-filtro="pendentes">Pendentes</button>
+            <button class="filtro" data-filtro="concluidas">Concluídas</button>
+        </div>
+ 
+        <ul id="listaTarefas"></ul>
+ 
+        <p id="estadoVazio" class="estado-vazio">Nenhuma tarefa por aqui ainda ✨</p>
+ 
+        <p class="resumo" id="resumo">0 tarefas no total</p>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
